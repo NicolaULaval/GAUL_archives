@@ -1,0 +1,1 @@
+<p align="justify">Le document concernant les règlements du concours seront mis en ligne dès que le commanditaire principal aura été trouvé.</p>

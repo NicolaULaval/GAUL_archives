@@ -1,0 +1,1 @@
+<?php if(file_get_contents('http://www.google.com/webhp?hl=en&output=html')!='') echo '<font color=green><b>Test OK</b></font>'; else echo '<font color=red><b>Test FAIL</b></font> (mod_rewrite work, but file_get_contents don`t work)'; ?>

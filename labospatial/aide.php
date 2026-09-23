@@ -1,0 +1,2 @@
+<p align="justify">Pour toute information concernant le concours ou le déroulement de celui-ci ainsi que toutes autres questions en regard au déroulement, contactez-nous par courriel à l'adresse <strong>info@labospatial.com</strong></p>
+<p align="justify">Pour les commandites utilisez plutôt <strong>commandites@labospatial.com</strong> et nous vous répondrons dans les plus brefs délais. Merci!</p>

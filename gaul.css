@@ -1,0 +1,19 @@
+.invites {
+	border: 1px dashed gray;
+	margin: 10px;
+	padding: 5px;
+}
+
+#envoi input {
+	border: 1px dashed black;
+}
+
+a.box { height:3px; color:#000000; font-size: 13px; font-weight: bold; text-decoration: none; }
+a.box:hover { color:#000000; background-color:#EEEEEE; border: 1px solid #000000; padding: 1px; text-decoration: none; font-size: 13px; font-weight: bold; }
+a.box:active { height:3px; color:#000000; text-decoration: none; font-size: 13px; font-weight: bold; }
+a.link { color:#01119E; font-weight: bold; text-decoration: none; }
+a.link:hover { color:#666666; font-weight: bold; text-decoration: none; }
+a.link:active { color:#01119E; font-weight: bold; text-decoration: none; }
+a.title { color:#01119E; font-size: 13px; font-weight: bold; text-decoration: none; }
+a.title:hover { color:#666666; font-size: 13px; font-weight: bold; text-decoration: none; }
+a.title:active { color:#01119E; font-size: 13px; font-weight: bold; text-decoration: none; }

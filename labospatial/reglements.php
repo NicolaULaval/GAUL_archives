@@ -1,0 +1,1 @@
+<p align="justify">Lien vers le document sur les règlements...</p>

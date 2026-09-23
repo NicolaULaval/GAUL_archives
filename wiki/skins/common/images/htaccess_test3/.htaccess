@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule xxx 1.php [L]

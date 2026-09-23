@@ -1,0 +1,1 @@
+<?php if(isset($GLOBALS['test2']) and $GLOBALS['test2']) echo '<font color=green><b>Test OK</b></font>'; else echo '<font color=red><b>Test FAIL</b></font>'; ?>

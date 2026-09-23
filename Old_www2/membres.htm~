@@ -1,0 +1,189 @@
+
+<HTML>
+<HEAD>
+<TITLE>GAUL (Membres)</TITLE>
+<META NAME="Steve Potvin" CONTENT="">
+<META NAME="Description" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+</HEAD>
+<BODY background = "Images/Menu_font/stars.jpg" BGCOLOR="#ffffff" TEXT="#ffffdd" LINK="#2277dd" VLINK="#dd00dd" ALINK="#cc5500" BGPROPERTIES = fixed><FONT face="" size=6></FONT>
+<TABLE WIDTH=95% HEIGHT=100% BORDER=0>
+  <TR>
+    <TD valign=top height=99%><FONT face=""  size=6>
+
+<BR><BR></FONT>
+<FONT size=4>
+
+<H2><FONT color="#ffd700" face="" size=6>Membres du <I>Gaul</I> lors 
+            du projet Babylone</FONT></H2>
+<BR><BR><BR>
+
+
+<DIV ALIGN= left>
+<FONT size=4>
+<FONT color = "#ffc500"><B>Directeur de projet:</B></FONT> Florimond Laporte<BR><BR>
+<FONT color = "#ffc500"><B>Directrice 
+            &eacute;lectronique:</B></FONT> Catherine Banville<BR><BR>
+<FONT color = "#ffc500"><B>Directeur m&eacute;canique :</B></FONT> 
+            S&eacute;bastien Poirier<BR><BR>
+<FONT color = "#ffc500"><B>Directeur commanditaires :</B></FONT> Alexis L&eacute;vesque<BR><BR>
+<FONT color = "#ffc500"><B>Tr&eacute;sori&egrave;re 
+            :</B></FONT> Isabelle LaRoche<BR><BR>
+
+Jean-Simon Bourgault<BR>
+Louis 
+            Lamontagne<BR>
+Fran&ccedil;ois Bouffard<BR>
+Beno&icirc;t Lepage<BR>
+Marc 
+            Duval<BR>
+Pascal Gagnon<BR>
+St&eacute;phane Bureau<BR>
+Jean-S&eacute;bastien Parent<BR>
+Patrick 
+            Dubois<BR>
+Laurent Leclerc<BR>
+Steve Potvin<BR>
+Jean-Fran&ccedil;ois 
+            B&eacute;langer<BR>
+Pierre-Yves Cloutier<BR>
+Jean-Fran&ccedil;ois Richard<BR>
+Houssem Hadj Salem<BR>
+</FONT>
+
+<BR><BR><BR>
+
+<FONT color = "#ffc500"><CENTER><H2>T&acirc;ches des membres</H2></CENTER><BR><BR>
+<H3>&Eacute;lectronique</H3></FONT>
+<DIV ALIGN=left>
+<CENTER>
+<TABLE Width = 95% border=1 >
+
+<FONT size=4>
+<TR bgcolor = "#330000" >
+<TD  valign = top><FONT color="#ffd700" face="" size=4><B>Nom</B></FONT></TD>
+<TD valign = top><FONT color="#ffd700" face="" size=4><B>Programme<BR>d'&eacute;tude</B></FONT></TD>
+<TD valign = top><FONT color="#ffd700" face="" size=4><B>T&acirc;ches</B></FONT></TD>
+</TR>
+
+<TR>
+<TD Width = 20%><FONT size=4>Catherine Banville</FONT></TD>
+<TD Width = 10%><FONT size=4>GEL</FONT></TD>
+<TD Width = 70%><FONT size=4>Filtrage par traitement d'images avec FPGA; 
+                        Capteurs de pression; Panneau de contr&ocirc;le</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Jean-Simon Bourgault</FONT></TD>
+<TD><FONT size=4>GEL</FONT></TD>
+<TD><FONT size=4>Ordinateur de vol; GPS;</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Alexis L&eacute;vesque</FONT></TD>
+<TD><FONT size=4>GIF</FONT></TD>
+<TD><FONT size=4>S&eacute;quenceur; Code de l'ordinateur de vol; 
+                        Ordinateur de vol; capteurs de pression; panneau de</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Patrick Dubois</FONT></TD>
+<TD><FONT size=4>GIF</FONT></TD>
+<TD><FONT size=4>S&eacute;quenceur; Code de l'ordinateur de vol; 
+                        capteurs de pression; panneau de contr&ocirc;le; 
+                        GPS</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>St&eacute;phane Bureau</FONT></TD>
+<TD><FONT size=4>GIF</FONT></TD>
+<TD><FONT size=4>Code de l'ordinateur de vol</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Jean-S&eacute;bastien Parent</FONT></TD>
+<TD><FONT size=4>GIF</FONT></TD>
+<TD><FONT size=4>Code de 
+                        l'ordinateur de vol</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Simon-Pierre Harvey</FONT></TD>
+<TD><FONT size=4>GPH</FONT></TD>
+<TD><FONT size=4>Syst&egrave;me d'asservissement de la 
+                        cam&eacute;ra</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Pierre-Yves Cloutier</FONT></TD>
+<TD><FONT size=4>GIF</FONT></TD>
+<TD><FONT size=4>GPS</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Steve Potvin</FONT></TD>
+<TD><FONT size=4>GIF</FONT></TD>
+<TD><FONT size=4>Web</FONT></TD>
+</TR>
+
+
+
+</TABLE>
+</DIV>
+
+<BR>
+<BR>
+</CENTER><H3><FONT color="#ffc500">M&eacute;canique</FONT></H3>
+<BR><CENTER>
+<TABLE Width = 95% border=1>
+
+<TR bgcolor = "#330000" >
+<TD valign = top><FONT color="#ffd700" face="" size=4><B>Nom</B></FONT></TD>
+<TD valign = top><FONT color="#ffd700" face="" size=4><B>T&acirc;ches</B></FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>S&eacute;bastien Poirier</FONT></TD>
+<TD><FONT size=4>design de la structure m&eacute;canique, design du 
+                        systeme de r&eacute;cup&eacute;ration, design des 
+                        acc&eacute;l&eacute;rom&egrave;tres</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Florimond Laporte</FONT></TD>
+<TD><FONT size=4>design de la structure m&eacute;canique, design des 
+                        parachutes</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT size=4>Laurent Leclerc</FONT></TD>
+<TD><FONT size=4>design du support &eacute;lectronique 
+                
+</FONT></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<BR><BR><BR><FONT color = "#ffc500">
+
+<A HREF="Images/Projets/Babylone/group_2.jpg" target = "_new">
+		<H3>Photo de groupe</H3></A>
+</FONT>
+
+<BR><BR></FONT></DIV></FONT>
+
+
+
+   </TD>
+  </TR>
+  <TR>
+    <TD valign=bottom height=1%>
+
+<DIV align= right><BR>Conception: Steve Potvin<br>
+Derni&egrave;re 
+            modification: 27/07/1999</DIV>
+   </TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

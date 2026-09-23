@@ -1,0 +1,7 @@
+.texte { color: white; font-style: normal; font-weight: normal; font-size: 12px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.texteGros { color: white; font-style: normal; font-size: 13px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+a:active  { color: white; font-style: normal; font-size: 11px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+a:hover    { color: #CCCCCC; font-style: normal; font-size: 11px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+a  { color: white; font-style: normal; font-size: 11px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.texteMoyen { color: white; font-style: normal; font-size: 11px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }
+.textePetit { color: white; font-style: normal; font-size: 10px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: none }

@@ -1,0 +1,1 @@
+<?php global $xxx; if(isset($xxx) and $xxx) echo '<font color=green><b>Test OK</b></font>'; else echo '<font color=red><b>Test FAIL</b></font>'; ?>

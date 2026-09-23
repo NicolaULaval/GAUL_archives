@@ -1,0 +1,99 @@
+
+<HTML>
+<HEAD>
+<TITLE>GAUL Groupe A&eacute;rospatial de l'Universit&eacute; Laval</TITLE>
+<script language="javascript">
+<!--
+ok = false; pick = 1;
+if (navigator.userAgent.indexOf ("Mozilla") != -1) {
+  ok = parseInt(navigator.appVersion.substring(0,1)) >= 3
+} else {}
+
+   if (ok == 1) {
+      boutonx = new Image(127,30)
+      boutonx.src = "bouton_x.gif"
+      boutono = new Image(127,30)
+      boutono.src = "bouton_o.gif"
+   }
+   function un(nom) {
+       if (ok == 1) {
+          if ((nom == "f1")&&(pick!=1)) {document.f1.src = boutono.src;}
+          if ((nom == "f2")&&(pick!=2)) {document.f2.src = boutono.src;}
+          if ((nom == "f3")&&(pick!=3)) {document.f3.src = boutono.src;}
+          if ((nom == "f4")&&(pick!=4)) {document.f4.src = boutono.src;}
+          if ((nom == "f5")&&(pick!=5)) {document.f5.src = boutono.src;}
+          if ((nom == "f6")&&(pick!=6)) {document.f6.src = boutono.src;}
+          return true;
+       }
+   }
+   function deux(nom) {
+       if (ok == 1) {
+          if ((nom == "f1")&&(pick!=1)) {document.f1.src = boutonx.src;}
+          if ((nom == "f2")&&(pick!=2)) {document.f2.src = boutonx.src;}
+          if ((nom == "f3")&&(pick!=3)) {document.f3.src = boutonx.src;}
+          if ((nom == "f4")&&(pick!=4)) {document.f4.src = boutonx.src;}
+          if ((nom == "f5")&&(pick!=5)) {document.f5.src = boutonx.src;}
+          if ((nom == "f6")&&(pick!=6)) {document.f6.src = boutonx.src;}
+          return true;
+       }
+   }
+   function trois(nom) {
+       if (ok == 1) {
+          if (pick==1) {document.f1.src = boutonx.src;}
+          if (pick==2) {document.f2.src = boutonx.src;}
+          if (pick==3) {document.f3.src = boutonx.src;}
+          if (pick==4) {document.f4.src = boutonx.src;}
+          if (pick==5) {document.f5.src = boutonx.src;}
+          if (pick==6) {document.f6.src = boutonx.src;}
+          if ((nom == "f1")&&(pick!=1)) {document.f1.src = boutono.src; pick=1}
+          if ((nom == "f2")&&(pick!=2)) {document.f2.src = boutono.src; pick=2}
+          if ((nom == "f3")&&(pick!=3)) {document.f3.src = boutono.src; pick=3}
+          if ((nom == "f4")&&(pick!=4)) {document.f4.src = boutono.src; pick=4}
+          if ((nom == "f5")&&(pick!=5)) {document.f5.src = boutono.src; pick=5}
+          if ((nom == "f6")&&(pick!=6)) {document.f6.src = boutono.src; pick=6}
+          return true;
+       }
+   }
+// -->
+</script>
+
+<META NAME="Steve Potvin" CONTENT="">
+<META NAME="Description" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+</HEAD>
+<BODY BACKGROUND="Images/Menu_font/backmenu.gif" BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#000080" VLINK="#800080" ALINK="#FF0000">
+<BASE TARGET=MAIN>
+<TABLE WIDTH=160 HEIGHT=200 CELLPADDING=0 BORDER=0 CELLSPACING=0>
+  <TR>
+    <TD  Valign = top  Align = left width=30
+            ><IMG SRC="bouton_o.gif" BORDER=0 WIDTH=33 HEIGHT=30 name=f1
+            ><IMG SRC="bouton_x.gif" BORDER=0 WIDTH=33 HEIGHT=30 name=f2
+            ><IMG SRC="bouton_x.gif" BORDER=0 WIDTH=33 HEIGHT=30 name=f3
+            ><IMG SRC="bouton_x.gif" BORDER=0 WIDTH=33 HEIGHT=30 name=f4
+            ><IMG SRC="bouton_x.gif" BORDER=0 WIDTH=33 HEIGHT=30 name=f5
+            ><IMG SRC="bouton_x.gif" BORDER=0 WIDTH=33 HEIGHT=30 name=f6>            <BR><BR><BR><BR>
+            <A HREF ="Cv/cv.htm">
+			<IMG SRC = "Images/Cv/cv.gif" ALT "CV" WIDTH="45" HEIGHT = "45" BORDER = 0></IMG></A>			<A HREF ="Album/album.htm">
+		<IMG SRC = "Images/Album/album.gif" ALT "Album" WIDTH="45" HEIGHT = "45" BORDER = 0></IMG></A>           <BR><BR><BR><BR><BR><BR><BR><BR>          </TD>
+    
+    <TD Valign = top Align = left width=130
+           ><A HREF="accueil.htm" onmouseover="un('f1')" onmouseout="deux('f1')" onclick="trois('f1')"
+                  ><IMG SRC="Images/Menu_font/accueil.gif" BORDER=0 WIDTH=127 HEIGHT=30></A
+           ><A HREF="membres.htm" onmouseover="un('f2')" onmouseout="deux('f2')" onclick="trois('f2')"
+                  ><IMG SRC="Images/Menu_font/membres.gif" BORDER=0 WIDTH=127 HEIGHT=30></A
+           ><A HREF="projets.htm" onmouseover="un('f3')" onmouseout="deux('f3')" onclick="trois('f3')"
+                  ><IMG SRC="Images/Menu_font/projet.gif" BORDER=0 WIDTH=127 HEIGHT=30></A
+           ><A HREF="commandit.htm" onmouseover="un('f4')" onmouseout="deux('f4')" onclick="trois('f4')"
+                  ><IMG SRC="Images/Menu_font/comm.gif" BORDER=0 WIDTH=127 HEIGHT=30></A
+           ><A HREF="liens.htm" onmouseover="un('f5')" onmouseout="deux('f5')" onclick="trois('f5')"
+                  ><IMG SRC="Images/Menu_font/liens.gif" BORDER=0 WIDTH=127 HEIGHT=30></A
+           ><A HREF="events.htm" onmouseover="un('f6')" onmouseout="deux('f6')" onclick="trois('f6')"
+                 ><IMG SRC="Images/Menu_font/evenement.gif" BORDER=0 WIDTH=127 HEIGHT=30></A>                <BR><BR> <BR><BR> <BR>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A Href = "Presse/revue_presse.htm">                <IMG SRC="Images/Presse/presse.jpg" ALT "Revue de presse" Width = 60 Height = 45 BORDER=0></IMG></A>                <BR><BR><BR><BR><BR><BR>
+                <A Href = "Sondage/sondage.htm">                <IMG SRC="Images/Sondage/sondage.gif" ALT "Sondage" BORDER=0></IMG></A>
+                                 </TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>

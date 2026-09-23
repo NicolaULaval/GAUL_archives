@@ -1,0 +1,1 @@
+<p align="justify">Les étudiants auront à réaliser leur propre micro-lanceur. Les bases du concours ainsi que son envergure seront établies tout dépendamment du budget associé à notre commanditaire.</p>

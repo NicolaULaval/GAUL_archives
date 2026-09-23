@@ -1,0 +1,71 @@
+Various non-US characters in HTML
+
+Don't forget the trailing semi-colon 
+
+AElig "Æ"  -- capital AE diphthong (ligature) &#198; or &AElig;
+Aacute "Á" -- capital A, acute accent &#193; or &Aacute;
+Acirc "Â"  -- capital A, circumflex accent &#194; or &Acirc;
+Agrave "À" -- capital A, grave accent &#192; or &Agrave;
+Aring "Å"  -- capital A, ring &#197; or &Aring;
+Atilde "Ã" -- capital A, tilde &#195; or &Atilde;
+Auml "Ä"   -- capital A, dieresis or umlaut mark &#196; or &Auml;
+Ccedil "Ç" -- capital C, cedilla &#199; or &Ccedil;
+ETH "Ð"    -- capital Eth, Icelandic &#208; or &ETH;
+Eacute "É" -- capital E, acute accent &#201; or &Eacute;
+Ecirc "Ê"  -- capital E, circumflex accent &#202; or &Ecirc;
+Egrave "È" -- capital E, grave accent &#200; or &Egrave;
+Euml "Ë"   -- capital E, dieresis or umlaut mark &#203; or &Euml;
+Iacute "Í" -- capital I, acute accent &#205; or &Iacute;
+Icirc "Î"  -- capital I, circumflex accent &#206; or &Icirc;
+Igrave "Ì" -- capital I, grave accent &#204; or &Igrave;
+Iuml "Ï"   -- capital I, dieresis or umlaut mark &#207; or &Iuml;
+Ntilde "Ñ" -- capital N, tilde &#209; or &Ntilde;
+Oacute "Ó" -- capital O, acute accent &#211; or &Oacute;
+Ocirc "Ô"  -- capital O, circumflex accent &#212; or &Ocirc;
+Ograve "Ò" -- capital O, grave accent &#210; or &Ograve;
+Oslash "Ø" -- capital O, slash &#216; or &Oslash;
+Otilde "Õ" -- capital O, tilde &#213; or &Otilde;
+Ouml "Ö"   -- capital O, dieresis or umlaut mark &#214; or &Ouml;
+THORN "Þ"  -- capital THORN, Icelandic &#222; or &THORN;
+Uacute "Ú" -- capital U, acute accent &#218; or &Uacute;
+Ucirc "Û"  -- capital U, circumflex accent &#219; or &Ucirc;
+Ugrave "Ù" -- capital U, grave accent &#217; or &Ugrave;
+Uuml "Ü"   -- capital U, dieresis or umlaut mark &#220; or &Uuml;
+Yacute "Ý" -- capital Y, acute accent &#221; or &Yacute;
+aacute "á" -- small a, acute accent &#225; or &aacute;
+acirc "â"  -- small a, circumflex accent &#226; or &acirc;
+aelig "æ"  -- small ae diphthong (ligature) &#230; or &aelig;
+agrave "à" -- small a, grave accent &#224; or &agrave;
+amp "&;"   -- ampersand &amp; or &amp;
+aring "å"  -- small a, ring &#229; or &aring;
+atilde "ã" -- small a, tilde &#227; or &atilde;
+auml "ä"   -- small a, dieresis or umlaut mark &#228; or &auml;
+ccedil "ç" -- small c, cedilla &#231; or &ccedil;
+eacute "é" -- small e, acute accent &#233; or &eacute;
+ecirc "ê"  -- small e, circumflex accent &#234; or &ecirc;
+egrave "è" -- small e, grave accent &#232; or &egrave;
+eth "ð"    -- small eth, Icelandic &#240; or &eth;
+euml "ë"   -- small e, dieresis or umlaut mark &#235; or &euml;
+gt ">"     -- greater than &gt; or &gt;
+iacute "í" -- small i, acute accent &#237; or &iacute;
+icirc "î"  -- small i, circumflex accent &#238; or &icirc;
+igrave "ì" -- small i, grave accent &#236; or &igrave;
+iuml "ï"   -- small i, dieresis or umlaut mark &#239; or &iuml;
+lt "<"     -- less than &lt; or &lt;
+ntilde "ñ" -- small n, tilde &#241; or &ntilde;
+oacute "ó" -- small o, acute accent &#243; or &oacute;
+ocirc "ô"  -- small o, circumflex accent &#244; or &ocirc;
+ograve "ò" -- small o, grave accent &#242; or &ograve;
+oslash "ø" -- small o, slash &#248; or &oslash;
+otilde "õ" -- small o, tilde &#245; or &otilde;
+ouml "ö"   -- small o, dieresis or umlaut mark &#246; or &ouml;
+szlig "ß"  -- small sharp s, German (sz ligature) &#223; or &szlig;
+thorn "þ"  -- small thorn, Icelandic &#254; or &thorn;
+uacute "ú" -- small u, acute accent &#250; or &uacute;
+ucirc "û"  -- small u, circumflex accent &#251; or &ucirc;
+ugrave "ù" -- small u, grave accent &#249; or &ugrave;
+uuml "ü"   -- small u, dieresis or umlaut mark &#252; or &uuml;
+yacute "ý" -- small y, acute accent &#253; or &yacute;
+yuml "ÿ"   -- small y, dieresis or umlaut mark &#255; or &yuml;
+
+

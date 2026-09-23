@@ -1,0 +1,145 @@
+<HTML>
+<HEAD>
+<TITLE>GAUL (Riopelle)</TITLE>
+<META NAME="Steve Potvin" CONTENT="">
+<META NAME="Description" CONTENT="Riopelle">
+<META NAME="Keywords" CONTENT="Riopelle">
+</HEAD>
+<BODY background = "../../Images/Menu_font/stars.jpg" BGCOLOR="#ffffff" TEXT="#ffffdd" LINK="#2277dd" VLINK="#dd00dd" ALINK="#cc5500" BGPROPERTIES = fixed>
+<TABLE WIDTH=95% BORDER=0>
+  <TR>
+    <TD valign=top height=99%>
+
+<BR><BR><BR>
+
+<FONT size=3 face="">
+
+<UL><HR>
+<H2><FONT color="#ffd700" face="" size=6>Riopelle (1998)</FONT></H2>
+<HR><BR><BR>
+<CENTER>
+
+<TABLE WIDTH = 50% BORDER = 1>
+<FONT size=3>
+                    <TBODY>
+  
+	<TR>
+	<TD><FONT size=3 face=""><B>Diam&egrave;tre:</B></FONT></TD>
+	<TD><FONT size=3 face="">10,2 cm (4 po)</FONT></TD>
+	</TR>
+
+	<TR>
+	<TD><FONT size=3 face=""><B>Propulseur: </B></FONT></TD>
+	<TD><FONT size=3 face="">C-14 Toutatis</FONT></TD>
+	</TR>
+
+	<TR>
+	<TD><FONT size=3 face=""><B>Dur&eacute;e de combustion:</B></FONT></TD>
+	<TD><FONT size=3 face="">2,2 secondes</FONT></TD>
+	</TR>
+
+	<TR>
+	<TD><FONT size=3 face=""><B>Altitude 
+                            maximale atteinte:</B></FONT></TD>
+	<TD><FONT size=3 face="">plus de 1500 m</FONT></TD>
+	</TR>
+
+	<TR>
+	<TD><FONT size=3 face=""><B>Vitesse 
+                            maximale atteinte:</B></FONT></TD>
+	<TD><FONT size=3 face="">164,7 
+                    m/s</FONT></TD>
+	</TR>
+</FONT></TABLE></CENTER>
+
+<BR><BR>Le rapport de <I>Riopelle</I> est maintenant disponible en 
+                format &nbsp;&nbsp;
+<a href="riopelle.pdf"><IMG SRC = "../../Images/Projets/Riopelle/pdficon.gif" BORDER = 0>
+</IMG></a>&nbsp;&nbsp;(420KB)
+                
+ <DIV STYLE="TEXT-ALIGN: justify">    
+<H2><FONT color="#ffd700"><B>R&eacute;sultats du 
+                lancement</B></FONT></H2>
+
+
+<DIV STYLE="TEXT-ALIGN: justify"><BR>Le lancement a eu lieu &agrave; la base 
+                militaire de Valcartier vers 13h30 dimanche le 13 septembre 
+                1998.&nbsp; Les exp&eacute;riences emport&eacute;es par Riopelle 
+                comprenaient un capteur de pression statique et un capteur de 
+                pression dynamique (plac&eacute;s dans un tube de Pitot &agrave; 
+                l'int&eacute;rieur de l'antenne, sur le nez de la fus&eacute;e), 
+                un acc&eacute;l&eacute;rom&egrave;tre compos&eacute; d'une 
+                poutre de flexion munies de jauges de d&eacute;formation, un 
+                gyroscope &agrave; trois axes ainsi que deux fumig&egrave;nes 
+                devant &ecirc;tre d&eacute;clench&eacute;s apr&egrave;s la fin 
+                de la combustion du moteur et au moment de la culmination.&nbsp; 
+                Les capteurs de rotation sur les axes du gyroscope n'ont pas 
+                &eacute;t&eacute; branch&eacute;s compte tenu de 
+                probl&egrave;mes techniques quelques jours avant le 
+                lancement.&nbsp; Le vol devait ainsi servir de test 
+                m&eacute;canique au gyroscope.
+
+<BR><BR>La mise &agrave; feu de Riopelle a 
+                &eacute;t&eacute; effectu&eacute;e avec succ&egrave;s.&nbsp; 
+                L'acc&eacute;l&eacute;rom&egrave;tre a pu fournir une courbe de 
+                pouss&eacute;e du propulseur Toutatis et a permis de 
+                d&eacute;terminer l'acc&eacute;l&eacute;ration maximale atteinte 
+                (14 g environ).&nbsp; Les capteurs de pression ont bien 
+                fonctionn&eacute; pendant la mont&eacute;e.&nbsp; Pr&egrave;s de 
+                la culmination, la saturation du capteur de pression statique 
+                &agrave; provoqu&eacute; la d&eacute;cision de l'algorithme de 
+                logique floue d'ouvrir le parachute.&nbsp; L'ouverture du 
+                parachute a cependant &eacute;t&eacute; retard&eacute;e par le 
+                s&eacute;quenceur jusqu'au d&eacute;but de la fen&ecirc;tre de 
+                temps calcul&eacute;e.&nbsp; Le parachute a &eacute;t&eacute; 
+                d&eacute;ploy&eacute; de fa&ccedil;on optimale 19 secondes 
+                apr&egrave;s la mise &agrave; feu, l&eacute;g&egrave;rement 
+                avant la culmination.&nbsp; La vitesse de la fus&eacute;e telle 
+                que mesur&eacute;e par le capteur de pression dynamique 
+                &eacute;tait alors d'environ 50 m/s (180 km/h).
+
+<BR><BR>Le parachute s'est manifestement 
+                d&eacute;tach&eacute; de la fus&eacute;e, laissant celle-ci 
+                poursuivre sa trajectoire ballistique.&nbsp; Le fumig&egrave;ne 
+                devant se d&eacute;clencher apr&egrave;s combustion du 
+                propulseur a mis un certain temps avant d'&ecirc;tre visible, ce 
+                qui fait qu'il a surtout permis de retracer la fus&eacute;e lors 
+                de la descente.&nbsp; L'autre fumig&egrave;ne, plus faible, n'a 
+                pas &eacute;t&eacute; visible ou n'a pas eu le temps 
+                d'&ecirc;tre d&eacute;clench&eacute;.&nbsp; L'ordinateur de vol 
+                a cess&eacute; de fonctionn&eacute; peu apr&egrave;s l'ouverture 
+                du parachute &agrave; cause d'une modification de la tension de 
+                r&eacute;f&eacute;rence (masse) due &agrave; la mise en marche 
+                du moteur &eacute;lectrique responsable de l'ouverture de la 
+                porte du parachute.&nbsp; La fus&eacute;e s'est 
+                &eacute;cras&eacute;e avec fracas &agrave; environ un 
+                kilom&egrave;tre de son point de d&eacute;part.&nbsp; Elle n'a 
+                pas encore &eacute;t&eacute; r&eacute;cup&eacute;r&eacute;e, et 
+                le parachute, tomb&eacute; quelques minutes plus tard dans une 
+                zone &agrave; risque, non plus. 
+</DIV>
+
+<BR><BR><A HREF="memrio.htm">Membres du <I>Gaul</I> lors du projet <I>Riopelle</I></A>
+<BR><BR><A HREF="../../Album/album.htm#rio">Photos</A>
+<BR><BR><A HREF="http://www.drev.dnd.ca/FAJ/FAJ1998_f.html" target = "_blank">
+<BR>	<CENTER><H2>Festival aérospatial jeunesse du CRDV 1998 avec Riopelle</H2></A>
+<BR><BR><CENTER><A href = "../../Images/Projets/Riopelle/riopelle.avi" >
+<IMG SRC = ../../Images/Projets/Riopelle/mov.gif border = 0></IMG><BR>
+Vidéo<BR>755Ko</A>
+
+<BR><BR></DIV></UL></FONT>
+            <DIV></DIV></TD></TR>
+
+  <TR>
+    <TD valign=bottom height=1%>
+
+<FONT size=2>
+<DIV align= right><BR>Conception: Steve Potvin<BR>
+Derni&egrave;re 
+            modification: 27/07/1999</DIV>
+</FONT>
+
+   </TD>
+  </TR></TBODY></TABLE>
+</BODY>
+</HTML>

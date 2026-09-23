@@ -1,0 +1,1 @@
+<?php $GLOBALS['test2']=true; ?>
